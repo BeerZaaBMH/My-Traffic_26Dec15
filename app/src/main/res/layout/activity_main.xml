@@ -3,34 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg7"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="banmihospital.thailand.beerzaa.mytraffic.MainActivity"
-    android:background="@drawable/bg7">
+    tools:context="banmihospital.thailand.beerzaa.mytraffic.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/head"
-        android:id="@+id/textView"
-        android:textSize="@dimen/h1"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorText" />
+        android:text="@string/head"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/h1" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:text="New Button" />
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_below="@+id/textView"
         android:layout_above="@+id/button"
+        android:layout_below="@+id/textView"
         android:layout_margin="20dp" />
 </RelativeLayout>
